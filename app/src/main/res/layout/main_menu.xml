@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED581"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding15dp"
+    android:paddingLeft="@dimen/padding15dp"
+    android:paddingRight="@dimen/padding15dp"
+    android:paddingTop="@dimen/padding15dp"
+    tools:context=".MainMenu">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height80dp"
+        android:layout_weight="0.5"
+        android:background="#1B5E20"
+        android:focusable="auto"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom|center_vertical|fill_vertical|center_horizontal"
+        android:text="@string/welcome_to_musicstructure_for_udacity"
+        android:textAlignment="center"
+        android:textColor="#4CAF50 "
+        android:textColorLink="#4CAF50 "
+        android:textSize="@dimen/textSize30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height0dp"
+        android:layout_weight="3"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/width60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menuAlbums"
+                android:layout_width="@dimen/width150dp"
+                android:layout_height="@dimen/margin270dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginEnd="@dimen/margin10dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin40dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardBackgroundColor="#1B5E20"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width150dp"
+                    android:layout_height="@dimen/height260dp"
+                    android:background="#1B5E20"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height15dp"
+                        android:layout_margin="@dimen/margin5dp"
+                        android:layout_marginTop="@dimen/margin16dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@string/albumcover"
+                        android:cropToPadding="false"
+                        android:padding="@dimen/padding10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cover" />
+
+                    <TextView
+                        android:id="@+id/mainAlbum"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height0dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/albumtext"
+                        android:fontFamily="casual"
+                        android:gravity="center_vertical"
+                        android:text="@string/album"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#B2FF59"
+                        android:textSize="@dimen/textSize36sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        tools:text="ALBUM" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/width60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/menuPlayer"
+                android:layout_width="@dimen/width150dp"
+                android:layout_height="@dimen/margin270dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin10dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin40dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardBackgroundColor="#1B5E20"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/width150dp"
+                    android:layout_height="@dimen/height260dp"
+                    android:background="#1B5E20"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:fadeScrollbars="false"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height0dp"
+                        android:layout_margin="@dimen/margin16dp"
+                        android:layout_weight="1"
+                        android:background="#F9FBE7 "
+                        android:contentDescription="@string/appname"
+                        android:padding="@dimen/padding10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/mymusic"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/mainPlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height0dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/playertext"
+                        android:fontFamily="casual"
+                        android:gravity="center_vertical"
+                        android:text="@string/playerName"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="#B2FF59 "
+                        android:textSize="@dimen/textSize36sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        tools:text="PLAYER" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CB342 "
+    android:contentDescription="@string/albumcover"
+    android:fadingEdge="horizontal|vertical"
+    android:filterTouchesWhenObscured="false"
+    android:fitsSystemWindows="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding15dp"
+    android:paddingLeft="@dimen/padding15dp"
+    android:paddingRight="@dimen/padding15dp"
+    android:paddingTop="@dimen/padding15dp"
+    tools:context=".PlayerActivity">
+
+    <TextView
+        android:id="@+id/currentalbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:contentDescription="@string/information_about_current_album_playing"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_vertical"
+        android:text="@string/information_about_current_album_playing"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="@dimen/textSize18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height0dp"
+        android:layout_margin="@dimen/margin30dp"
+        android:layout_weight="6"
+        android:background="@color/imageViewBackround"
+        android:baselineAlignBottom="false"
+        android:contentDescription="@string/albumcover"
+        android:padding="@dimen/padding20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cover" />
+
+    <TextView
+        android:id="@+id/currentinformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:contentDescription="@string/currentinformation"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_vertical"
+        android:text="@string/information_about_current_track"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="@dimen/textSize18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:text="Information about current track." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height0dp"
+        android:layout_margin="@dimen/margin8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pausebutton"
+            android:layout_width="@dimen/width0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="@color/imageButtonColor"
+            android:baselineAlignBottom="false"
+            android:contentDescription="@string/pausebutton"
+            android:cropToPadding="false"
+            android:duplicateParentState="false"
+            android:fadeScrollbars="false"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/ic_pause_black_24dp"
+            tools:ignore="NestedWeights" />
+
+        <ImageButton
+            android:id="@+id/playbutton"
+            android:layout_width="@dimen/width0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#558B2F "
+            android:contentDescription="@string/playbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/stopbutton"
+            android:layout_width="@dimen/width0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/imageButtonColor"
+            android:contentDescription="@string/stopbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_stop_black_24dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

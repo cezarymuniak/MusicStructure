@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding10dp">10dp</dimen>
+    <dimen name="textSize36sp">36sp</dimen>
+    <dimen name="height0dp">0dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="height15dp">15dp</dimen>
+    <dimen name="height260dp">260dp</dimen>
+    <dimen name="width150dp">150dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin270dp">270dp</dimen>
+    <dimen name="height300dp">300dp</dimen>
+    <dimen name="width60dp">60dp</dimen>
+    <dimen name="textSize30sp">30sp</dimen>
+    <dimen name="height80dp">80dp</dimen>
+    <dimen name="padding15dp">15dp</dimen>
+    <dimen name="width0dp">0dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="textSize18sp">18sp</dimen>
+    <dimen name="padding20dp">20dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="width75dp">75dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="height120dp">120dp</dimen>
+    <dimen name="textSize12sp">12sp</dimen>
+    <dimen name="margin160dp">160dp</dimen>
+    <dimen name="margin70dp">70dp</dimen>
+</resources>

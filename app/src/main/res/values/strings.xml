@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music Structure App</string>
+    <string name="action_settings">Settings</string>
+    <string name="albuminformations">Informations about one or more albums in our base.</string>
+    <string name="albumcover">albumCover</string>
+    <string name="playerName">PLAYER</string>
+    <string name="playertext">playerText</string>
+    <string name="album">ALBUM</string>
+    <string name="albumtext">albumText</string>
+    <string name="appname">Music Structure Udacity</string>
+    <string name="welcome_to_musicstructure_for_udacity">Welcome to MusicStructure for Udacity</string>
+    <string name="information_about_current_album_playing">Information about current album playing.</string>
+    <string name="currentinformation">currentInformation</string>
+    <string name="information_about_current_track">Information about current track.</string>
+    <string name="pausebutton">pauseButton</string>
+    <string name="playbutton">playButton</string>
+    <string name="stopbutton">stopButton</string>
+    <string name="song">Song</string>
+    <string name="artist">Artist</string>
+</resources>
